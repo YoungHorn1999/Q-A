@@ -1,0 +1,23 @@
+.iconLife {
+    width: 4vh;
+    height: 4vh;
+    position: absolute;
+    left: 46vw;
+    top: 6vh;
+}
+
+.iconClose {
+    width: 4vh;
+    height: 4vh;
+    position: absolute;
+    left: 6.2vw;
+    top: 6vh;
+}
+
+.check {
+    width: 4.3vh;
+    height: 4.3vh;
+    position: absolute;
+    left: 0.6vh;
+    bottom: 0.6vh;
+}

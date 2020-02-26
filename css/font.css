@@ -1,0 +1,61 @@
+.wrongFont {
+    color: #f44744;
+    font-size: 60px;
+    font-weight:bold;
+    position: absolute;
+    left: 18.57vw;
+    bottom: 1.3vh;
+}
+
+.successFont1{
+    color: #06c050;
+    font-size: 60px;
+    font-weight:bold;
+    position: absolute;
+    left: 18.57vw;
+    bottom: 1.3vh;
+}
+
+.successFont2{
+    color: #1e2b47;
+    font-size: 60px;
+    font-weight:bold;
+    position: absolute;
+    left: 43vw;
+    bottom: 1.3vh;
+}
+
+.GoWord {
+    color: white;
+    font-weight:bold;
+    font-size: 42px;
+    position: absolute;
+    left: 45.44vw;
+    bottom: 2.5vh;
+}
+
+.submitWord {
+    color: white;
+    font-weight:bold;
+    font-size: 42px;
+    position: absolute;
+    left: 45.44vw;
+    bottom: 2.5vh;
+}
+
+.HP {
+    font-size: 40px;
+    font-weight:bold;
+    position: absolute;
+    left: 56vw;
+    top: 4.5vh;
+}
+
+.dec {
+    color: #87969e;
+    font-size: 42px;
+    font-weight:bold;
+    position: absolute;
+    left: 35.31vw;
+    top: 3.68vh;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Talkiin</title>
+        <link rel="stylesheet" href="./css//style.css">
+        <link rel="stylesheet" href="./css/option&answer&question.css">
+        <link rel="stylesheet" href="./css/progess.css">
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/icon.css">
+    </head>
+    <body>
+        <div id="app" class="background">
+            <div>
+                <img src="./img/icon 关闭当前页面.svg" class="iconClose">
+                <img src="./img/icon 生命值64.svg" class="iconLife">
+                <p class="HP">{{count}}</p>
+                <div class="progressBar"></div>
+                <div class="progress1"></div>
+                <div class="progress2" v-show="progress2"></div>
+                <div class="progress3" v-show="progress3"></div>
+                <div class="progress4" v-show="progress4"></div>
+                <div class="progress5" v-show="progress5"></div>
+                <div class="progress6" v-show="progress6"></div>
+                <div class="progress7" v-show="progress7"></div>
+                <div class="progress8" v-show="progress8"></div>
+                <div class="progress9" v-show="progress9"></div>
+                <div class="progress10" v-show="progress10"></div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="Congratulations" v-show="rightFlag">
+                    <img src="./img/check-success.svg" class="checkSuccess1">
+                    <img src="./img/icon 答对之后标记本题.svg" class="successicon">
+                    <p class="successFont1">恭喜你！</p>
+                    <p class="successFont2">答对了</p>
+                </div>
+                <div class="Sorry" v-show="wrongFlag">
+                    <img src="./img/check-error.svg" class="checkSuccess1">
+                    <img src="./img/icon 答错之后标记本题.svg" class="successicon">
+                    <p class="wrongFont">很遗憾！</p>
+                    <p class="successFont2">选错了</p>
+                </div>
+                <p class="dec">选择正确的翻译</p>
+                <p class="question">{{question[currentIndexQ]}}</p>
+            </div>
+            <div class="box">
+                
+                <div @click="chooseA">
+                    <p class="answer1">{{answer[currentIndexA1]}}</p>
+                    <div :class="{option1: AisActive, option1_1: AisLine, option1_1_1: AisRight, option1_1_1_1: AisWrong}">
+                        <div v-show = "checkFlag1">
+                            <img src="./img/check-white.svg" class="check" v-show="childcheckFlag1">
+                            <img src="./img/check-black.svg" class="check" v-show="childcheckFlag1_1">
+                        </div>    
+                            <img src="./img/check-success.svg" class="check" v-show="rightFlag1">
+                            <img src="./img/check-error.svg" class="check" v-show="wrongFlag1">
+                    </div>
+                </div>
+                
+                <div @click="chooseB">
+                    <p class="answer2">{{answer[currentIndexA2]}}</p>
+                    <div :class="{option2: BisActive, option2_2: BisLine, option2_2_2: BisRight, option2_2_2_2: BisWrong}" >
+                        <div v-show="checkFlag2">
+                            <img src="./img/check-white.svg" class="check" v-show="childcheckFlag2">
+                            <img src="./img/check-black.svg" class="check" v-show="childcheckFlag2_2">  
+                        </div>
+                            <img src="./img/check-success.svg" class="check" v-show="rightFlag2">
+                            <img src="./img/check-error.svg" class="check" v-show="wrongFlag2">
+                    </div>
+                </div>
+                
+                <div @click="chooseC">
+                    <p class="answer3">{{answer[currentIndexA3]}}</p>
+                    <div :class="{option3: CisActive, option3_3: CisLine, option3_3_3: CisRight, option3_3_3_3: CisWrong}" >
+                        <div v-show="checkFlag3">
+                            <img src="./img/check-white.svg" class="check" v-show="childcheckFlag3">
+                            <img src="./img/check-black.svg" class="check" v-show="childcheckFlag3_3">  
+                        </div>
+                            <img src="./img/check-success.svg" class="check" v-show="rightFlag3">
+                            <img src="./img/check-error.svg" class="check" v-show="wrongFlag3">
+                    </div>
+                </div>
+                
+                <div @click="chooseD">
+                    <p class="answer4">{{answer[currentIndexA4]}}</p>
+                    <div :class="{option4: DisActive, option4_4: DisLine, option4_4_4: DisRight, option4_4_4_4: DisWrong}" >
+                        <div v-show="checkFlag4">
+                            <img src="./img/check-white.svg" class="check" v-show="childcheckFlag4">
+                            <img src="./img/check-black.svg" class="check" v-show="childcheckFlag4_4">
+                        </div>                       
+                            <img src="./img/check-success.svg" class="check" v-show="rightFlag4">
+                            <img src="./img/check-error.svg" class="check" v-show="wrongFlag4">
+                    </div>
+                </div>
+                
+            </div>
+            <div @click="submitClick" v-show="normalFlag">
+                <div :class="{submit: subActive, submit1:subLine}" @click="chooseA, chooseB, chooseC, chooseD">
+                    <P class="submitWord">提交</P>
+                </div>   
+            </div>
+            <div @click="GoClick">
+                <div class="Go" v-show="rightFlag">
+                    <P class="GoWord">继续</P>
+                </div>   
+            </div>
+            <div>
+                <div class="wrong" v-show="wrongFlag" @click="wrongClick">
+                    <P class="GoWord">继续</P>
+                </div>   
+            </div>                
+        </div>
+        <script src="./js/vue.js"></script>
+        <script src="./js/main.js"></script>  
+    </body>
+</html>

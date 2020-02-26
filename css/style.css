@@ -1,0 +1,105 @@
+.background {
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+    background-color: #ebecf0;
+    z-index: -9;
+}
+
+.submit {
+    width: 100vw;
+    height: 10.78vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #b1bdc6;
+    border-radius:45px;
+}
+
+.submit1 {
+    width: 100vw;
+    height: 10.78vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #282c4d;
+    border-radius:45px;
+}
+
+.Go {
+    width: 100vw;
+    height: 10.78vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #01c755;
+    border-radius:45px;
+}
+
+.wrong {
+    width: 100vw;
+    height: 10.78vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #f54338;
+    border-radius:45px;
+}
+
+.box{
+    width: 89.21vw; 
+    height:29.08vh;
+    border:5px solid #eaebf3; 
+    position: absolute;
+    left: 4.8vw;
+    bottom: 27.12vh;
+    border-radius:18px;
+}
+
+.checkSuccess1 {
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    left: 5.31vw;
+    bottom: 3.5vh;
+}
+
+.successicon{
+    height: 4.38vh;
+    width: 8.565vw;
+    position: absolute;
+    left: 70vw;
+    bottom: 3.6vh;
+}
+
+.backgroundWhite {
+    width: 100vw;
+    height: 88.45vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius:45px;
+    background-color: white;
+    z-index:-8;
+}
+
+.Congratulations {
+    background-color: #baf5ca;
+    width: 89.39vw;
+    height: 11.31vh;
+    position: absolute;
+    left: 5.31vw;
+    bottom: 13.34vh;
+    border-radius:116px;
+}
+
+.Sorry {
+    background-color: #ffccd5;
+    width: 89.39vw;
+    height: 11.31vh;
+    position: absolute;
+    left: 5.31vw;
+    bottom: 13.34vh;
+    border-radius:116px;
+}
+
